@@ -4,7 +4,7 @@
 
 h1 {
     font-family: var(--font-family);
-    font-size: 52px;
+    font-size: 48px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -13,7 +13,7 @@ h1 {
 
 h2 {
     font-family: var(--font-family);
-    font-size: 32px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -151,7 +151,7 @@ h4 {
     }
 
     .caption-skill {
-        font-size: 10px;
+        display: none;
     }
 }
 

@@ -1,0 +1,132 @@
+#header {
+    display: flex;
+    padding: 16px 64px;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    background-color: #fff;
+    border: 1px solid #B4B4B4;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.logo-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-header img {
+    max-width: 32px;
+    height: auto;
+}
+
+#menu-nav {
+    margin-left: auto;
+}
+
+#menu-mobile {
+    display: none;
+    border: none;
+    border-radius: 2px;
+}
+
+#menu-mobile img {
+    display: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    padding: 8px;
+    background: #7313E8;
+}
+
+#menu-nav-lista {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    list-style: none;
+}
+
+#menu-nav-lista li #link {
+    padding: 8px 12px;
+    color: #212121;
+    transition: all 0.3s ease-out;
+    border-radius: 2px;
+}
+
+#menu-nav-lista li #link:hover {
+    background-color: #000;
+    color: #7313E8;
+}
+
+@media (max-width:960px) {
+    #header{
+        padding: 12px 24px;
+    }
+
+    .logo-header img {
+        max-width: 156px;
+        height: auto;
+    }
+
+    #menu-nav-lista {
+        position: absolute;
+        left: 0;
+        top: 65px;
+        padding-left: 24px;
+        padding-top: 12px;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+        height: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+        background: rgba(243, 243, 243, 0.63);
+        backdrop-filter: blur(5px);
+        z-index: 4;
+        transition: all 0.6s ease-out;
+        align-items: start;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #menu-nav-lista.active {
+        overflow-y: auto;
+        visibility: visible;
+        height: 100vh;
+    }
+
+    #menu-nav-lista li {
+        opacity: 0;
+        transition: all 0.6s ease-out;
+        margin-bottom: 8px;
+    }
+
+    #menu-nav-lista.active li {
+        opacity: 1;
+    }
+
+    #menu-mobile {
+        display: inline-flex;
+        width: fit-content;
+        max-height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #menu-mobile img:first-child {
+        display: block;
+    }
+
+    #menu-mobile img:last-child {
+        display: none;
+    }
+
+    #menu-mobile.active img:last-child {
+        display: block;
+    }
+
+    #menu-mobile.active img:first-child {
+        display: none;
+    }
+}

@@ -1,0 +1,138 @@
+#btn {
+    display: inline-block;
+    padding: 9px 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 13px 5px rgba(33, 33, 33, 0.25), 0 4px 12px 4px rgba(255, 255, 255, 0.25) inset;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--N1);
+    transition: all 0.4s ease-in-out;
+}
+
+.btn-p {
+    background: #7313E8;
+}
+
+.btn-b {
+    background: var(--N8);
+}
+
+#btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 2px 13px 3px rgba(148, 148, 148, 0.25), 0 4px 12px 4px rgba(255, 255, 255, 0.25) inset;
+}
+
+span {
+    color: var(--P3);
+}
+
+#skill-card {
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    color: var(--N6);
+    background: var(--N1);
+    box-shadow: 0 3px 13px 5px rgba(33, 33, 33, 0.25), 0 4px 12px 4px rgba(255, 255, 255, 0.25) inset;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+#skill-card img {
+    width: 20px;
+    height: 20px;
+}
+
+#skill-card:hover {
+    box-shadow: none;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1400px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 124px;
+    padding-right: 124px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#subtitle {
+    color: var(--P2);
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    padding: 9px 20px;
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 8px;
+    background: var(--P5);
+    box-shadow: 0 3px 11px 4px rgba(115, 19, 232, 0.25), 0 4px 12px 4px rgba(255, 255, 255, 0.25) inset;
+    transition: all 0.4s ease-in-out;
+}
+
+#subtitle:hover {
+    box-shadow: 0 3px 11px 4px rgba(149, 79, 234, 0.186), 0 4px 12px 4px rgba(255, 255, 255, 0.25) inset;
+    transform: translateY(-4px);
+}
+
+@media (max-width:1200px) {
+
+    .container {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    #subtitle {
+        font-size: 16px;
+    }
+
+    #btn {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width:960px) {
+
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    #subtitle {
+        font-size: 14px;
+    }
+
+    #btn {
+        font-size: 14px;
+    }
+
+    #skill-card{
+        padding: 7px 14px;
+    }
+
+    #skill-card img {
+        width: 18px;
+        height: 18px;
+    }
+
+}
+
+@media (max-width:760px) {
+
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}

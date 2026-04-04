@@ -1,0 +1,119 @@
+#services-bg {
+    background-color: var(--N1);
+    border-radius: 42px;
+}
+
+#services-section {
+    width: 100%;
+}
+
+#services-section #subtitle {
+    margin-bottom: 12px;
+}
+
+#services-section h1 {
+    margin-bottom: 24px;
+    color: var(--N8);
+}
+
+#skill-wrapper {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 280px 280px 280px 280px;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#skill-card-service {
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: var(--N8);
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 290px;
+    max-height: 320px;
+    transition: all 0.3s ease-out;
+}
+
+.icon-img {
+    padding: 5px;
+    background-color: var(--P3);
+    border-radius: 2px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    transition: all 0.3s ease-out;
+}
+
+.icon-img img {
+    width: 32px;
+    height: 32px;
+}
+
+#skill-card-service h4 {
+    color: var(--N3);
+    margin-bottom: 12px;
+}
+
+#skill-card-service .body {
+    color: var(--N4);
+}
+
+#skill-card-service #background-element {
+    position: absolute;
+    right: -3px;
+    bottom: -5px;
+    width: 90px;
+    height: 64px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-out;
+}
+
+#skill-card-service:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 11px 3px rgba(115, 19, 232, 0.30);
+}
+
+#skill-card-service:hover #background-element {
+    opacity: 1;
+}
+
+#skill-card-service:hover .icon-img {
+    box-shadow: 0 4px 9px 2px rgba(255, 255, 255, 0.30) inset;
+}
+
+@media (max-width:1200px) {
+    #skill-wrapper {
+        grid-template-columns: 280px 280px 280px;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width:960px) {
+    #skill-wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width:760px) {
+    #skill-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    #skill-card-service {
+        min-height: 210px;
+        max-height: 240px;
+    }
+
+}

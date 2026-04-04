@@ -30,15 +30,15 @@
     display: none;
     border: none;
     border-radius: 2px;
+    padding: 8px;
+    background: #7313E8;
+    cursor: pointer;
 }
 
 #menu-mobile img {
     display: none;
     width: 20px;
     height: 20px;
-    cursor: pointer;
-    padding: 8px;
-    background: #7313E8;
 }
 
 #menu-nav-lista {
@@ -49,19 +49,21 @@
 }
 
 #menu-nav-lista li #link {
+    display: inline-block;
     padding: 8px 12px;
     color: #212121;
     transition: all 0.3s ease-out;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 #menu-nav-lista li #link:hover {
-    background-color: #000;
-    color: #7313E8;
+    background-color: var(--P1);
+    color: var(--P3);
+    transform: translateY(-4px);
 }
 
 @media (max-width:960px) {
-    #header{
+    #header {
         padding: 12px 24px;
     }
 

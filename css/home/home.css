@@ -9,7 +9,7 @@
 }
 
 #hero-section #subtitle {
-    margin-bottom: 4px;
+    margin-bottom: 12px;
 }
 
 #hero-section h1 {
@@ -19,8 +19,8 @@
 }
 
 #hero-section h3 {
-    max-width: 64ch;
-    margin-bottom: 42px;
+    max-width: 60ch;
+    margin-bottom: 44px;
     color: var(--N6);
 }
 
@@ -125,8 +125,8 @@
     }
 
     .skill-card-two {
-        top: 510px;
-        left: 80px;
+        top: 530px;
+        left: 63px;
     }
 
     .skill-card-three {
@@ -155,7 +155,7 @@
     }
 
     .skill-card-two {
-        top: 490px;
+        top: 566px;
         left: 47px;
     }
 
@@ -184,7 +184,7 @@
     }
 
     .skill-card-two {
-        top: 490px;
+        top: 623px;
         left: 47px;
     }
 

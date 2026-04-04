@@ -1,8 +1,7 @@
 #btn {
     display: inline-block;
     padding: 9px 20px;
-    border-radius: 8px;
-    box-shadow: 0 3px 13px 5px rgba(33, 33, 33, 0.25), 0 4px 12px 4px rgba(255, 255, 255, 0.25) inset;
+    border-radius: 4px;
     font-family: "Poppins";
     font-size: 18px;
     font-style: normal;
@@ -13,11 +12,13 @@
 }
 
 .btn-p {
-    background: #7313E8;
+    background: var(--P3);
+    box-shadow: 0 3px 13px 5px rgba(146, 40, 179, 0.25), 0 4px 12px 4px rgba(255, 255, 255, 0.25) inset;
 }
 
 .btn-b {
     background: var(--N8);
+    box-shadow: 0 3px 13px 5px rgba(33, 33, 33, 0.25), 0 4px 12px 4px rgba(255, 255, 255, 0.25) inset;
 }
 
 #btn:hover {
@@ -35,7 +36,7 @@ span {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    border-radius: 8px;
+    border-radius: 4px;
     color: var(--N6);
     background: var(--N1);
     box-shadow: 0 3px 13px 5px rgba(33, 33, 33, 0.25), 0 4px 12px 4px rgba(255, 255, 255, 0.25) inset;
@@ -75,10 +76,11 @@ span {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    border-radius: 8px;
+    border-radius: 4px;
     background: var(--P5);
     box-shadow: 0 3px 11px 4px rgba(115, 19, 232, 0.25), 0 4px 12px 4px rgba(255, 255, 255, 0.25) inset;
     transition: all 0.4s ease-in-out;
+    width: fit-content;
 }
 
 #subtitle:hover {
@@ -94,7 +96,7 @@ span {
     }
 
     #subtitle {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     #btn {
@@ -106,12 +108,8 @@ span {
 @media (max-width:960px) {
 
     .container {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
-    #subtitle {
-        font-size: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 
     #btn {
@@ -126,11 +124,18 @@ span {
 @media (max-width:760px) {
 
     .container {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     #skill-card {
         padding: 5px 5px;
+    }
+}
+
+@media (max-width:560px) {
+
+    #subtitle {
+        font-size: 14px;
     }
 }

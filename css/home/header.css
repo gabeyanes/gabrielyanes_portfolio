@@ -1,11 +1,11 @@
 #header {
     display: flex;
-    padding: 16px 64px;
+    padding: 12px 64px;
     align-items: center;
     position: fixed;
     z-index: 1000;
-    background-color: #fff;
-    border: 1px solid #B4B4B4;
+    background-color: var(--N2);
+    border: 1px solid var(--N3);
     box-sizing: border-box;
     width: 100%;
 }
@@ -17,8 +17,12 @@
     gap: 8px;
 }
 
+.logo-header h3 {
+    font-size: 18px;
+}
+
 .logo-header img {
-    max-width: 32px;
+    max-width: 24px;
     height: auto;
 }
 
@@ -75,7 +79,7 @@
     #menu-nav-lista {
         position: absolute;
         left: 0;
-        top: 65px;
+        top: 64px;
         padding-left: 24px;
         padding-top: 12px;
         flex-direction: column;

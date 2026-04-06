@@ -1,13 +1,13 @@
 #btn {
     display: inline-block;
-    padding: 9px 20px;
+    padding: 8px 14px;
     border-radius: 4px;
     font-family: "Poppins";
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    color: var(--N1);
+    color: var(--N2);
     transition: all 0.4s ease-in-out;
 }
 
@@ -55,12 +55,11 @@ span {
 }
 
 .container {
-    box-sizing: border-box;
     max-width: 1400px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 124px;
-    padding-right: 124px;
+    padding-top: 74px;
+    padding-bottom: 74px;
+    padding-left: 64px;
+    padding-right: 64px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -70,14 +69,14 @@ span {
     text-transform: uppercase;
     cursor: pointer;
     text-align: center;
-    padding: 9px 20px;
+    padding: 8px 14px;
     font-family: var(--font-family);
-    font-size: 20px;
+    font-size: 14px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: normal;
     border-radius: 4px;
-    background: var(--P5);
+    background: var(--P4);
     box-shadow: 0 3px 11px 4px rgba(115, 19, 232, 0.25), 0 4px 12px 4px rgba(255, 255, 255, 0.25) inset;
     transition: all 0.4s ease-in-out;
     width: fit-content;
@@ -93,10 +92,6 @@ span {
     .container {
         padding-left: 64px;
         padding-right: 64px;
-    }
-
-    #subtitle {
-        font-size: 16px;
     }
 
     #btn {
@@ -131,11 +126,10 @@ span {
     #skill-card {
         padding: 5px 5px;
     }
-}
-
-@media (max-width:560px) {
 
     #subtitle {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
+
+@media (max-width:560px) {}

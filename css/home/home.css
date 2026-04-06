@@ -202,5 +202,13 @@
         top: 89px;
         right: 147px;
     }
+
+}
+
+@media (max-width:480px) {
+
+    .skill-card-three {
+        left: 320px;
+    }
     
 }

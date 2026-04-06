@@ -53,14 +53,20 @@ h4 {
 
 #link {
     font-family: var(--font-family);
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     color: #212121;
 }
 
-.small {}
+.small {
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 .caption-skill {
     font-family: var(--font-family);
@@ -85,6 +91,10 @@ h4 {
 
     h4 {
         font-size: 18px;
+    }
+
+    .small {
+        font-size: 12px;
     }
 
     .body {
@@ -121,6 +131,10 @@ h4 {
         font-size: 14px;
     }
 
+    .small{
+        font-size: 10px;
+    }
+
     #link {
         font-size: 14px;
     }
@@ -155,4 +169,3 @@ h4 {
         display: none;
     }
 }
-

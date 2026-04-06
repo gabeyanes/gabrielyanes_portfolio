@@ -1,0 +1,139 @@
+#contato-bg {
+    background-color: var(--N2);
+    border-top-right-radius: 42px;
+    border-top-left-radius: 42px;
+}
+
+#contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+#info #subtitle {
+    margin-bottom: 12px;
+}
+
+#info h1 {
+    margin-bottom: 24px;
+    color: var(--N8);
+}
+
+#info .body {
+    margin-bottom: 32px;
+    color: var(--N7);
+}
+
+#info .small {
+    color: var(--N6);
+    margin-bottom: 8px;
+    margin-left: 16px;
+    position: relative;
+}
+
+#info .small::before {
+    top: 5.5px;
+    left: -16px;
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+    background-color: rgb(24, 180, 68);
+}
+
+#info .small:last-child::before {
+    background-color: var(--P3);
+}
+
+#info-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px 16px;
+    padding-top: 38px;
+}
+
+.icon-contato {
+    display: inline-block;
+    background-color: var(--N1);
+    border-radius: 8px;
+    border: 1px solid var(--N4);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+    padding: 8px 14px;
+    max-width: 310px;
+    max-height: 72px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.icon-contato-img {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--N7);
+    border-radius: 2px;
+    transition: inherit;
+}
+
+.icon-contato-img img {
+    width: 20px;
+    height: auto;
+}
+
+.icon-contato:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 11px 3px rgba(115, 19, 232, 0.30);
+    border: 1px solid var(--P3);
+}
+
+.icon-contato:hover .icon-contato-img{
+    background-color: var(--P3);
+}
+
+.legenda .body{
+    color: var(--N7);
+}
+
+.legenda .small{
+    color: var(--N5);
+}
+
+@media (max-width:1200px){
+    #info .small::before{
+        top: 5px;
+    }
+}
+
+@media (max-width:960px){
+    #info .small::before{
+        top: 4.4px;
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media (max-width:760px){
+    #info-links{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .icon-contato{
+        max-width: 100%;
+    }
+}
+
+@media (max-width:560px){
+    
+    #contato{
+        grid-template-columns: 1fr;
+    }
+
+}

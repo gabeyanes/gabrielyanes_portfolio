@@ -1,10 +1,6 @@
 #services-bg {
-    background-color: var(--N1);
+    background-color: var(--N2);
     border-radius: 42px;
-}
-
-#services-section {
-    width: 100%;
 }
 
 #services-section #subtitle {

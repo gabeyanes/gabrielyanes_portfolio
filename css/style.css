@@ -11,6 +11,10 @@
 
 @import "./services/services.css";
 
+/* Contato */
+
+@import "./contact/contato.css";
+
 /* Componentes */
 
 @import "./components/recursos.css";

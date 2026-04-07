@@ -90,8 +90,8 @@ span {
 @media (max-width:1200px) {
 
     .container {
-        padding-left: 64px;
-        padding-right: 64px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
     #btn {

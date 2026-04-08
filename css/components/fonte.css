@@ -70,7 +70,7 @@ h4 {
 
 .caption-skill {
     font-family: var(--font-family);
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -106,7 +106,7 @@ h4 {
     }
 
     .caption-skill {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
@@ -137,10 +137,6 @@ h4 {
 
     #link {
         font-size: 14px;
-    }
-
-    .caption-skill {
-        font-size: 10px;
     }
 }
 

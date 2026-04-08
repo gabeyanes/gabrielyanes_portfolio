@@ -46,8 +46,8 @@ span {
 }
 
 #skill-card img {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
 }
 
 #skill-card:hover {
@@ -56,8 +56,8 @@ span {
 
 .container {
     max-width: 1400px;
-    padding-top: 74px;
-    padding-bottom: 74px;
+    padding-top: 124px;
+    padding-bottom: 124px;
     padding-left: 64px;
     padding-right: 64px;
     margin-left: auto;
@@ -132,4 +132,14 @@ span {
     }
 }
 
-@media (max-width:560px) {}
+@media (max-width:560px) {
+    #skill-card {
+        padding: 4px 4px;
+    }
+}
+
+@media (max-width:460px){
+    #skill-card{
+        display: none;
+    }
+}

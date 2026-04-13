@@ -1,0 +1,128 @@
+.projeto {
+    width: 100%;
+    max-height: 500px;
+    background-color: var(--N1);
+    border-radius: 8px;
+    border-radius: 16px;
+    border: 1px solid var(--N2);
+    background: var(--N1);
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.06);
+}
+
+.projeto h3 {
+    color: var(--N7);
+    margin-bottom: 12px;
+}
+
+.projeto .body {
+    color: var(--N6);
+    margin-bottom: 20px;
+}
+
+.projeto-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.projeto-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.projeto-img #projeto-legenda {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    display: flex;
+    padding: 6px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--P3, #7313E8);
+    box-shadow: 0 3px 11px 4px rgba(115, 19, 232, 0.25), 0 4px 12px 4px rgba(255, 255, 255, 0.25) inset;
+    color: var(--P1);
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.conteudo {
+    padding-top: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 12px;
+}
+
+#skill-project {
+    display: flex;
+    padding: 7px 11px;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 8px;
+    background: var(--N2);
+    font-family: "Poppins";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.skills-group {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+#skill-project img {
+    width: 16px;
+    height: 16px;
+}
+
+#projeto #subtitle {
+    margin-bottom: 12px;
+}
+
+#projeto h1 {
+    color: var(--N8);
+    margin-bottom: 24px;
+}
+
+.projetos {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+@media (max-width:1200px) {
+    .projetos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width:960px) {
+    .projetos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .projeto {
+        max-height: 100%;
+    }
+}
+
+@media (max-width:760px) {
+    .projetos {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}

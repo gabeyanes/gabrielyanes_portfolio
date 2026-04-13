@@ -11,6 +11,10 @@
 
 @import "./services/services.css";
 
+/* Projeto */
+
+@import "./project/projeto.css";
+
 /* Contato */
 
 @import "./contact/contato.css";
@@ -26,6 +30,8 @@
 @import "./components/cores.css";
 
 /* Animações */
+
+@import "./components/animacoes.css";
 
 /* Global */
 

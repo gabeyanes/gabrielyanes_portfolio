@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./assets/icons/Logo.svg" type="image/svg+xml">
     <title>Gabriel Yanes</title>
+    <script>
+        document.documentElement.classList.add('js');
+    </script>
 </head>
 
 <body>
 
-    <header id="header">
+    <header id="header" class="fadeInDown" data-anime="400">
 
         <div class="logo-header">
             <img src="./assets/icons/Logo.svg" alt="logo">
@@ -29,40 +32,41 @@
             <ul id="menu-nav-lista">
                 <li><a href="#hero-section" id="link">Home</a></li>
                 <li><a href="#services-bg" id="link">Serviços</a></li>
-                <li><a href="#" id="link">Projetos</a></li>
+                <li><a href="#projeto-bg" id="link">Projetos</a></li>
                 <li><a href="#contato-bg" id="link">Contato</a></li>
-                <li><a href="#" id="btn" class="btn-p">Contratar</a></li>
+                <li><a href="https://wa.me/+551191985211" id="btn" class="btn-p">Contratar</a></li>
             </ul>
 
         </nav>
+
     </header>
 
     <main id="hero-section" class="container">
-        <div id="skill-card" class="skill-card-one">
+        <div id="skill-card" class="skill-card-one fadeInLeft" data-anime="400">
             <img src="./assets/icons/Microsoft-Power-Bi--Streamline-Svg-Logos.svg" alt="Power BI">
             <p class="caption-skill">Power BI</p>
         </div>
-        <div id="skill-card" class="skill-card-two">
+        <div id="skill-card" class="skill-card-two fadeInLeft" data-anime="600">
             <img src="./assets/icons/Python--Streamline-Svg-Logos.svg" alt="Python">
             <p class="caption-skill">Python</p>
         </div>
-        <div id="skill-card" class="skill-card-three">
+        <div id="skill-card" class="skill-card-three fadeInUp" data-anime="500">
             <img src="./assets/icons/sql-server 1.svg" alt="sql-server">
             <p class="caption-skill">SQL</p>
         </div>
-        <div id="skill-card" class="skill-card-four">
+        <div id="skill-card" class="skill-card-four fadeInRight" data-anime="400">
             <img src="./assets/icons/Frame.svg" alt="Excel">
             <p class="caption-skill">Excel</p>
         </div>
-        <div id="skill-card" class="skill-card-five">
+        <div id="skill-card" class="skill-card-five fadeInRight" data-anime="500">
             <img src="./assets/icons/Figma--Streamline-Svg-Logos.svg" alt="Figma">
             <p class="caption-skill">Figma</p>
         </div>
-        <div id="subtitle">Analista de Dados</div>
-        <h1>Utilizando <span>dados</span> para encontrar <span>soluções</span> inteligentes<span>.</span></h1>
-        <h3>Entregando soluções inteligentes através de dados de forma prática e simples, sempre pensando no melhor
+        <div id="subtitle" class="fadeInDown" data-anime="500">Analista de Dados</div>
+        <h1 class="fadeInUp" data-anime="600">Utilizando <span>dados</span> para encontrar <span>soluções</span> inteligentes<span>.</span></h1>
+        <h3 class="fadeInUp" data-anime="700">Entregando soluções inteligentes através de dados de forma prática e simples, sempre pensando no melhor
             resultado.</h3>
-        <div class="btn-group">
+        <div class="btn-group fadeInUp" data-anime="800">
             <a href="#" id="btn" class="btn-p">Contratar</a>
             <a href="#" id="btn" class="btn-b">Saiba mais</a>
         </div>
@@ -108,6 +112,42 @@
         </div>
     </section>
 
+    <section id="projeto-bg">
+        <div id="projeto" class="container">
+            <div id="subtitle">Projetos</div>
+            <h1>Trabalhos em destaque<span>.</span></h1>
+            <div class="projetos">
+                <div class="projeto">
+                    <div class="projeto-img">
+                        <div id="projeto-legenda">
+                            Dados
+                        </div>
+                        <img src="./assets/imgs/Captura de tela 2025-12-13 163517(1).png" alt="Imagem do Projeto">
+                    </div>
+                    <div class="conteudo">
+                        <h3>Dashboard de Vendas</h3>
+                        <div class="skills-group">
+                            <div id="skill-project">
+                                <img src="./assets/icons/Microsoft-Power-Bi--Streamline-Svg-Logos.svg" alt="Power BI">
+                                <p>Power BI</p>
+                            </div>
+                            <div id="skill-project">
+                                <img src="./assets/icons/Figma--Streamline-Svg-Logos.svg" alt="Figma">
+                                <p>Figma</p>
+                            </div>
+                        </div>
+                        <p class="body">Um dashboard de Vendas realizado no curso do SENAI de Data Analytics e Tomada de
+                            Decisão. O dashboard gera uma visão análitica das vendas da empresa.</p>
+                        <div class="btns-group">
+                            <a href="https://www.figma.com/community/file/1611114437494495150/dashboard-power-bivendas"
+                                id="btn" class="btn-p">Design</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contato-bg">
         <div id="contato" class="container">
             <div id="info">
@@ -119,7 +159,7 @@
                 <p class="small">Remoto ou presencial</p>
             </div>
             <div id="info-links">
-                <a href="" class="icon-contato">
+                <a href="https://wa.me/+551191985211" class="icon-contato">
                     <div class="icon-contato-img">
                         <img src="./assets/icons/whatsapp 1.svg" alt="WhatsApp">
                     </div>
@@ -128,7 +168,7 @@
                         <p class="small">Mensagem direta</p>
                     </div>
                 </a>
-                <a href="" class="icon-contato">
+                <a href="https://github.com/gabeyanes" class="icon-contato">
                     <div class="icon-contato-img">
                         <img src="./assets/icons/github 1.svg" alt="GitHub">
                     </div>
@@ -137,7 +177,7 @@
                         <p class="small">Repositórios</p>
                     </div>
                 </a>
-                <a href="" class="icon-contato">
+                <a href="https://www.figma.com/@gabrielyanes" class="icon-contato">
                     <div class="icon-contato-img">
                         <img src="./assets/icons/figma 1.svg" alt="Figma">
                     </div>
@@ -146,7 +186,7 @@
                         <p class="small">Designs & Protótipos</p>
                     </div>
                 </a>
-                <a href="" class="icon-contato">
+                <a href="https://www.linkedin.com/in/gabriel-yanes-br013/" class="icon-contato">
                     <div class="icon-contato-img">
                         <img src="./assets/icons/linkedin 1.svg" alt="LinkedIn">
                     </div>
@@ -155,7 +195,7 @@
                         <p class="small">Conecte-se</p>
                     </div>
                 </a>
-                <a href="" class="icon-contato">
+                <a href="mailto:gabriel.yanes1712@gmail.com" class="icon-contato">
                     <div class="icon-contato-img">
                         <img src="./assets/icons/envelope(2) 1.svg" alt="email">
                     </div>
@@ -164,7 +204,7 @@
                         <p class="small">Envie um e-mail</p>
                     </div>
                 </a>
-                <a href="" class="icon-contato">
+                <a href="https://lumen-forge.vercel.app/" class="icon-contato">
                     <div class="icon-contato-img">
                         <img src="./assets/icons/Frame 52.svg" alt="Lumen Forge">
                     </div>
@@ -184,16 +224,22 @@
                 <ul id="lista-link-menu">
                     <li><a href="#hero-section">Home</a></li>
                     <li><a href="#services-bg">Serviços</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#projeto-bg">Projetos</a></li>
                     <li><a href="#contato-bg">Contato</a></li>
                 </ul>
                 <ul id="lista-link-icon">
-                    <a href="#" class="icon-contato-img-footer"><img src="./assets/icons/whatsapp 1.svg" alt="WhatsApp"></a>
-                    <a href="#" class="icon-contato-img-footer"><img src="./assets/icons/github 1.svg" alt="GitHub"></a>
-                    <a href="#" class="icon-contato-img-footer"><img src="./assets/icons/figma 1.svg" alt="Figma"></a>
-                    <a href="#" class="icon-contato-img-footer"><img src="./assets/icons/linkedin 1.svg" alt="LinkedIn"></a>
-                    <a href="#" class="icon-contato-img-footer"><img src="./assets/icons/envelope(2) 1.svg" alt="Email"></a>
-                    <a href="#" class="icon-contato-img-footer"><img src="./assets/icons/Frame 52.svg" alt="Lumen Forge"></a>
+                    <a href="https://wa.me/+551191985211" class="icon-contato-img-footer" target="_blank"><img
+                            src="./assets/icons/whatsapp 1.svg" alt="WhatsApp"></a>
+                    <a href="https://github.com/gabeyanes" class="icon-contato-img-footer" target="_blank"><img
+                            src="./assets/icons/github 1.svg" alt="GitHub"></a>
+                    <a href="https://www.figma.com/@gabrielyanes" class="icon-contato-img-footer" target="_blank"><img
+                            src="./assets/icons/figma 1.svg" alt="Figma"></a>
+                    <a href="https://www.linkedin.com/in/gabriel-yanes-br013/" class="icon-contato-img-footer"
+                        target="_blank"><img src="./assets/icons/linkedin 1.svg" alt="LinkedIn"></a>
+                    <a href="mailto:gabriel.yanes1712@gmail.com" class="icon-contato-img-footer" target="_blank"><img
+                            src="./assets/icons/envelope(2) 1.svg" alt="Email"></a>
+                    <a href="https://lumen-forge.vercel.app/" class="icon-contato-img-footer" target="_blank"><img
+                            src="./assets/icons/Frame 52.svg" alt="Lumen Forge"></a>
                 </ul>
             </div>
             <div id="rodape-second-section">
@@ -202,6 +248,7 @@
         </div>
     </footer>
 
+    <script src="./js/plugins/simple-anime.js"></script>
     <script src="./js/app.js"></script>
 </body>
 

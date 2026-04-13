@@ -53,6 +53,7 @@
     grid-template-rows: 1fr 1fr 1fr;
     gap: 16px 16px;
     padding-top: 38px;
+    align-items: center;
 }
 
 .icon-contato {

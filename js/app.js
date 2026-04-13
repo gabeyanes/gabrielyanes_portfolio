@@ -22,3 +22,7 @@ links.forEach(link => {
 
 
 // Menu Mobile - Encerramento
+
+if(window.SimpleAnime) {
+    new SimpleAnime();
+}

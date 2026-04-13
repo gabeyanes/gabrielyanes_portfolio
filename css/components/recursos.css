@@ -26,6 +26,19 @@
     box-shadow: 0 2px 13px 3px rgba(148, 148, 148, 0.25), 0 4px 12px 4px rgba(255, 255, 255, 0.25) inset;
 }
 
+.btns-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btns-group #btn{
+    width: 100%;
+    text-align: center;
+}
+
 span {
     color: var(--P3);
 }

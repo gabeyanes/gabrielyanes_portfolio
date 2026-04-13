@@ -112,7 +112,7 @@
 @media (max-width:960px) {
     .projetos {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 
     .projeto {
@@ -123,6 +123,6 @@
 @media (max-width:760px) {
     .projetos {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 }

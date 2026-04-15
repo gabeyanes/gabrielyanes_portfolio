@@ -1,5 +1,5 @@
 .projeto {
-    width: 100%;
+    width: 1fr;
     max-height: 500px;
     background-color: var(--N1);
     border-radius: 8px;
@@ -7,6 +7,10 @@
     border: 1px solid var(--N2);
     background: var(--N1);
     box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .projeto h3 {
@@ -22,11 +26,11 @@
 .projeto-img {
     position: relative;
     width: 100%;
-    height: auto;
+    max-height: 280px;
 }
 
 .projeto-img img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -53,6 +57,10 @@
     padding-left: 8px;
     padding-right: 8px;
     padding-bottom: 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #skill-project {
@@ -65,7 +73,7 @@
     border-radius: 8px;
     background: var(--N2);
     font-family: "Poppins";
-    font-size: 12px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 500;
 }
@@ -76,6 +84,7 @@
     justify-content: start;
     gap: 8px;
     margin-bottom: 16px;
+    flex-wrap: wrap;
 }
 
 #skill-project img {
@@ -96,7 +105,7 @@
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 420px 420px 420px;
     grid-template-rows: 1fr;
     justify-content: space-between;
     gap: 20px;
